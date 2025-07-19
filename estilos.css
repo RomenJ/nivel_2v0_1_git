@@ -1,0 +1,400 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Contenedor principal con márgenes responsivos */
+.container.py-5 {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.hextraMarg {
+  margin-left: 20%;
+  font-size: 2.3em;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+/* Separación entre botones */
+.botones-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Estilo base de los botones */
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Botón Rectangular a Redondo - Azul */
+.btn-rect-to-round--blue {
+  border: 2px solid rgb(58, 134, 255);
+  color: rgb(58, 134, 255);
+  background: transparent;
+}
+
+.btn-rect-to-round--blue:hover {
+  border-color: rgb(58, 134, 255);
+  background: rgb(58, 134, 255);
+  color: white;
+  border-radius: 60px;
+}
+
+/* Botón Rectangular a Redondo - Naranja */
+.btn-rect-to-round--orange {
+  border: 2px solid rgb(254, 174, 0);
+  color: rgb(254, 174, 0);
+  background: transparent;
+}
+
+.btn-rect-to-round--orange:hover {
+  border-color: rgb(254, 174, 0);
+  background: rgb(254, 174, 0);
+  color: white;
+}
+
+/* Efectos comunes */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Tarjetas del juego (vista test) */
+.card {
+  border-radius: 0.75rem;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.card p.lead {
+  font-size: 1.1rem;
+}
+
+.btn-group .btn {
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+#descripcion {
+  font-size: 1.1rem;
+}
+
+#mensaje {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Acordiones (vista definiciones) */
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-body ul {
+  padding-left: 1.2rem;
+}
+
+/* Footer o navegación inferior */
+footer {
+  background-color: #f8f9fa; /* Fondo claro para el footer */
+  padding: 2rem 0; /* Espaciado vertical */
+  text-align: center; /* Centrado horizontal */
+  font-size: 1rem; /* Tamaño de fuente */
+  color: #6c757d; /* Color suave para el texto */
+  position: relative; /* Para posicionar elementos dentro */
+}
+
+footer a {
+  color: #0d6efd; /* Azul para los enlaces */
+  text-decoration: none; /* Sin subrayado inicialmente */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+footer a:hover {
+  color: #0b5ed7; /* Azul más oscuro al hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container.py-5 {
+    padding: 1rem;
+  }
+
+  .btn-group-vertical.gap-3 .btn {
+    font-size: 1rem;
+  }
+}
+
+/* Fondo personalizado */
+.bg-light {
+  background-color: #f9f9f9 !important;
+}
+
+/* Títulos extra grandes */
+.hextraMarg {
+  font-size: 2.5rem;
+  color: #4a4a4a;
+}
+
+/* Botón redondeado */
+.btn-rect-to-round {
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-rect-to-round--orange {
+  background-color: #ff9800;
+  color: white;
+}
+.btn-rect-to-round--blue {
+  background-color: #2196f3;
+  color: white;
+}
+.btn-rect-to-round:hover {
+  opacity: 0.9;
+}
+
+/* Tarjetas de estilos */
+.estilo-card {
+  transition: transform 0.3s ease;
+}
+.estilo-card:hover {
+  transform: translateY(-5px);
+}
+
+.icono-inhibido {
+  font-size: 2.5rem;
+  color: #757575;
+}
+.icono-agresivo {
+  font-size: 2.5rem;
+  color: #d32f2f;
+}
+.icono-asertivo {
+  font-size: 2.5rem;
+  color: #388e3c;
+}
+
+.icono-agresivo {
+  font-size: 2.5rem;
+  color: #d32f2f; /* rojo fuerte */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.icono-inhibido {
+  font-size: 2.5rem;
+  color: #757575; /* gris suave */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.icono-asertivo {
+  font-size: 2.5rem;
+  color: #388e3c; /* verde oscuro */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff; /* Azul claro para dar un toque juvenil */
+  color: #212529;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Azul oscuro para el título */
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Sección de introducción */
+.introduction {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.introduction img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introduction p {
+  font-size: 1.2rem;
+  color: #343a40;
+  margin-top: 1rem;
+}
+
+/* Contenedor de tarjetas */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #e9ecef37;
+  border-radius: 10px;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #343a40;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
