@@ -2,6 +2,10 @@
 
 
 <img width="1138" height="907" alt="CapturaHHSSNivel2" src="https://github.com/user-attachments/assets/7e6a0250-15ee-4f7e-aec8-c04dc2e6f12d" />
+
+
+
+<br/>
 # nivel_2v0_1_git
 Minijuego de habilidades sociales en JS para menores de 10 a 12 años en formato responsive.
 
